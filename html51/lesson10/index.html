@@ -5,12 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media in HTML</title>
+
+    <link rel="stylesheet" href="node_modules/mediaelement/build/mediaelementplayer.css">
 </head>
 
 <body>
-    <video width="900" height="506" loop="loop" autoplay="autoplay" poster="images/mod2_video.png" controls="controls">
-        <source src="videos/mod2_video.mp4" type="video/mp4">The video tag is not supported by your current browser.
-    </video>
+    <div>
+        <h2>Media in HTML5</h2>
+        <video width="900" height="506" loop="loop" autoplay="autoplay" poster="images/mod2_video.png" controls="controls">
+            <source src="videos/mod2_video.mp4" type="video/mp4">The video tag is not supported by your current browser.
+        </video>
+    </div>
+    <hr>
+    <div>
+        <h2>Media in HTML5 with MediaElement.js</h2>
+        <video width="900" height="506" class="mejs__player" >
+            <source src="videos/mod2_video.mp4" type="video/mp4">The video tag is not supported by your current browser.
+        </video>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="node_modules/mediaelement/build/mediaelement-and-player.js"></script>
+    <script>
+        var player = new MediaElementPlayer('.mejs__player', {
+                // the order of controls you want on the control bar (and other plugins below)
+                features: ['playpause', 'progress', 'current', 'duration', 'tracks', 'volume', 'fullscreen'],
+                // Hide controls when playing and mouse is not over the video
+                alwaysShowControls: true
+            });
+    </script>
 </body>
 
 </html>

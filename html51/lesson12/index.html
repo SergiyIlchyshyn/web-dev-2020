@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas in HTML</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <!-- onload="imageTask2();" -->
+    <h2>Task_1</h2>
+    <button onclick="createImage()">Show Task 1</button> <br>
+    <canvas id="my_canvas" width="150" height="150"></canvas>
+    <hr>
+    <h2>Task_2_A</h2>
+    <button onclick="imageTask2A()">Show Task 2_A</button> <br>
+    <canvas id="task2A" width="300" height="300"></canvas>
+    <hr>
+    <h2>Task_2_B</h2>
+    <button onclick="imageTask2B()">Show Task 2_B</button> <br>
+    <canvas id="task2B" width="300" height="100"></canvas>
+    <hr>
+    <h2>Task_2_C</h2>
+    <button onclick="imageTask2C()">Show Task 2_B</button> <br>
+    <canvas id="task2C" width="200" height="250"></canvas>
+    <script>
+        function createImage() {
+            var canvas = document.getElementById("my_canvas");
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "rgb(100,0,0)"
+            ctx.fillRect(20, 10, 50, 70);
+        }
+        // ======================================
+        function imageTask2A() {
+            var canvas = document.getElementById("task2A");
+            if (canvas.getContext) {
+                var ctx = canvas.getContext("2d");
+                ctx.strokeStyle = "black";
+                ctx.fillRect(10, 10, 280, 280);
+                ctx.clearRect(40, 40, 220, 220);
+            }
+        }
+        // ======================================
+        function imageTask2B() {
+            var canvas = document.getElementById("task2B");
+            if (canvas.getContext) {
+                var ctx = canvas.getContext("2d");
+                ctx.fillStyle = "red";
+                ctx.fillRect(10, 10, 200, 50);
+                ctx.fillStyle = "green";
+                ctx.fillRect(20, 20, 200, 50);
+                ctx.fillStyle = "blue";
+                ctx.fillRect(30, 30, 200, 50);
+            }
+        }
+        // ======================================
+        function imageTask2C() {
+            var canvas = document.getElementById("task2C");
+            if (canvas.getContext) {
+                var ctx = canvas.getContext("2d");
+                ctx.fillStyle = "blue";
+                ctx.fillRect(10, 10, 20, 200);
+                ctx.fillStyle = "green";
+                ctx.fillRect(10, 10, 20, 40);
+                ctx.fillStyle = "blue";
+                ctx.fillRect(50, 40, 20, 170);
+                ctx.fillStyle = "green";
+                ctx.fillRect(50, 40, 20, 27);
+                ctx.fillStyle = "blue";
+                ctx.fillRect(90, 25, 20, 185);
+                ctx.fillStyle = "green";
+                ctx.fillRect(90, 25, 20, 20);
+            }
+        }
+    </script>
+</body>
+
+</html>

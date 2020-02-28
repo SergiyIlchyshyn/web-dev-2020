@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <title>
+        web-s0302
+    </title>
+    <meta name="keywords" content="КПНУ, К-ПНУ, Каменец-Подольский национальный университет,
+    физико-математический факультет, моделирование, международная конференция" />
+    <link href="content/site.css" rel="stylesheet" />
+</head>
+
+<body>
+    <section class="form__section">
+        <h1>Регистрация на конференцию</h1>
+        <p>Для регистрации на конференции и выставления счета-фактуры, просим заполнить и отправить нам регистрационную форму</p>
+        <p>Поля, отмеченные символом <span class="star">*</span>, являются обязательными для заполнения</p>
+        <form>
+            <fieldset>
+                <legend>Конференция:</legend>
+                <div>
+                    <label for="name-conf">Название конференции:<span class="star">*</span></label>
+                    <input id="name-conf" name="name-conf" type="text" required="required">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Сведения об участнике:</legend>
+                <div>
+                    <label for="lastname">Фамилия:<span class="star">*</span></label>
+                    <input id="lastname" name="lastname" type="text" required="required">
+                </div>
+                <div>
+                    <label for="firstname">Имя:<span class="star">*</span></label>
+                    <input id="firstname" name="firstname" type="text" required="required">
+                </div>
+                <div>
+                    <label for="secondname">Отчество:<span class="star">*</span></label>
+                    <input id="secondname" name="secondname" type="text" required="required">
+                </div>
+                <div>
+                    <label for="email">E-mail:<span class="star">*</span></label>
+                    <input id="email" name="email" type="email" required="required">
+                </div>
+                <div>
+                    <label for="phone">Телефона:<span class="star">*</span></label>
+                    <input id="phone" name="phone" type="tel" required="required">
+                </div>
+                <div>
+                    <label for="mobilephone">Мобильный телефон:<span class="star">*</span></label>
+                    <input id="mobilephone" name="mobilephone" type="tel" required="required">
+                </div>
+                <div>
+                    <label for="fax">Факс:<span class="star">*</span></label>
+                    <input id="fax" name="fax" type="text" required="required">
+                </div>
+                <div>
+                    <label for="promocode">Промо-код:</label>
+                    <input id="promocode" name="promocode" type="text">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Сведения об организации:</legend>
+                <div>
+                    <label for="organization">Полное название организации:<span class="star">*</span></label>
+                    <input id="organization" name="organization" type="text" required="required">
+                </div>
+                <div>
+                    <label for="country">Страна регистрации:<span class="star">*</span></label>
+                    <input id="country" name="country" type="text" required="required">
+                </div>
+                <div>
+                    <label for="city">Город:<span class="star">*</span></label>
+                    <input id="city" name="city" type="text" required="required">
+                </div>
+                <div>
+                    <label for="vatcode">ИНН (VAT-номер для организаций из стран ЕС:</label>
+                    <input id="vatcode" name="vatcode" type="text" required="required">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Контактное лицо по оформлению документов: <span class="contact">(совпадает с участником конференции)</span></legend>
+                <div>
+                    <label for="lastname">Фамилия:<span class="star">*</span></label>
+                    <input id="lastname" name="lastname" type="text" required="required">
+                </div>
+                <div>
+                    <label for="firstname">Имя:<span class="star">*</span></label>
+                    <input id="firstname" name="firstname" type="text" required="required">
+                </div>
+                <div>
+                    <label for="secondname">Отчество:<span class="star">*</span></label>
+                    <input id="secondname" name="secondname" type="text" required="required">
+                </div>
+                <div>
+                    <label for="adress">Почтовый адрес (с индексом):<span class="star">*</span></label>
+                    <input id="adress" name="adress" type="text" required="required">
+                </div>
+                <div>
+                    <label for="phone">Телефона:<span class="star">*</span></label>
+                    <input id="phone" name="phone" type="tel" required="required">
+                </div>
+                <div>
+                    <label for="fax">Факс:<span class="star">*</span></label>
+                    <input id="fax" name="fax" type="text" required="required">
+                </div>
+                <div>
+                    <label for="email">E-mail:<span class="star">*</span></label>
+                    <input id="email" name="email" type="email" required="required">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Дополнительно:</legend>
+                <div>
+                    <label for="otherinfo">Примечание:</label>
+                    <textarea name="otherinfo" id="otherinfo" cols="30" rows="10"></textarea>
+                </div>
+            </fieldset>
+            <fieldset><button type="submit">Отправить данные</button></fieldset>
+        </form>
+    </section>
+</body>
+
+</html>

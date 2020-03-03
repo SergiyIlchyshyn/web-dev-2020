@@ -35,7 +35,6 @@ main {
     min-height: 420px;
     max-width: 960px;
     background-color: #fff;
-    padding-left: 10px;
     margin: 0 auto;
     border: 1px solid #496077;
 }
@@ -76,7 +75,6 @@ footer {
 }
 
 .form__section div>label {
-    /* flex-grow: .5; */
     display: inline-block;
     width: 30%;
     text-align: left;
@@ -85,8 +83,6 @@ footer {
 .form__section div>input,
 .form__section div>textarea {
     flex-grow: 1;
-    /* flex-grow: .5; */
-    /* text-align: right; */
 }
 
 .star {

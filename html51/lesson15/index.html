@@ -10,7 +10,9 @@
 <body onload="init()">
     <p>Current location is:<span id="coords"></span> </p>
     <button onclick="getLocation()">Try It</button>
-    <img src="" alt="Image for geoposition" id="demoMap">
+    <div>
+        <img src="" alt="Image for Bing Maps" id="demoMapBing">
+    </div>
 
     <script>
         var coordsPlaceHolder;
@@ -30,6 +32,11 @@
 
         function showPosition(position) {
             coordsPlaceHolder.innerHTML = "<br>Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+            var str = "http://dev.virtualearth.net/REST/V1/Imagery/Map/Road/" +
+                position.coords.latitude + "%2C" + position.coords.longitude +
+                "/10?mapSize=450,450&format=png&key=" +
+                "AoQhRIufurKJQc96A_6rEnVyTjsz_wwNgWDuRW2nE1rSUAuQUS7p6oDGoDTQymy9";
+            demoMapBing.src = str;
         }
 
         function showError(error) {

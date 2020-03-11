@@ -1,10 +1,17 @@
 function task01() {
-    var a = document.getElementById('a-item').value | 0;
-    var b = document.getElementById('b-item').value | 0;
-    var res = document.getElementById('res');
-    var sum = a + b;
-    var riz = a - b;
-    var dob = a * b;
+    let a = document.getElementById('a-item').value | 0;
+    let b = document.getElementById('b-item').value | 0;
+    let res = document.getElementById('res01');
+    let sum = a + b;
+    let riz = a - b;
+    let dob = a * b;
     res.innerHTML = "Результат:" + "<br>" + "Сума = " + sum + "<br>" + "Різниця = " + riz + "<br>" + "Добуток = " + dob;
-    // alert("Результат:" + "<br>" + "Сума = " + sum + "<br>" + "Різниця = " + riz + "<br>" + "Добуток = " + dob);
+}
+
+function task02() {
+    let x = document.getElementById('x-item').value | 0;
+    let y = document.getElementById('y-item').value | 0;
+    let res = document.getElementById('res02');
+    let dob = (Math.abs(x) - Math.abs(y)) / (1 + Math.abs(x * y));
+    res.innerHTML = "Результат обчислення:" + dob;
 }

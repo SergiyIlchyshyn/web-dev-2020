@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESP-WEB-19</title>
 </head>
@@ -23,12 +24,33 @@
             </div>
             <button onclick="task01()">Run</button>
             <hr>
+            <output id="res01">
 
+            </output>
         </fieldset>
 
-        <output id="res">
 
-        </output>
+    </section>
+    <section>
+
+        <fieldset>
+            <legend>Task 2</legend>
+            <div>
+                <label for="x-item">Введіть число x:</label>
+                <input id="x-item" name="x-item" type="text" required="required">
+            </div>
+            <div>
+                <label for="y-item">Введіть число y:</label>
+                <input id="y-item" name="y-item" type="text">
+            </div>
+            <button onclick="task02()">Run</button>
+            <hr>
+            <output id="res02">
+
+            </output>
+        </fieldset>
+
+
     </section>
 
     <script src="js/main.js"></script>

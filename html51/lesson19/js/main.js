@@ -15,3 +15,21 @@ function task02() {
     let dob = (Math.abs(x) - Math.abs(y)) / (1 + Math.abs(x * y));
     res.innerHTML = "Результат обчислення:" + dob;
 }
+
+function task03() {
+    let x = document.getElementById('c-item') | 0;
+    let res = document.getElementById('res03');
+    let v = x * x * x;
+    let s = 6 * x * x;
+    res.innerHTML = "Об'єм куба = " + v + "<br>" + "Площа = " + s;
+}
+
+
+function task04() {
+    let n = document.getElementById('n-item').value | 0;
+    let m = document.getElementById('m-item').value | 0;
+    let res = document.getElementById('res04');
+    let avr = (n + m) / 2;
+
+    res.innerHTML = "Середнє арифметичне = " + avr + "<br>";
+}

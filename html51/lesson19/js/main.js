@@ -13,12 +13,13 @@ function task02() {
     let y = document.getElementById('y-item').value | 0;
     let res = document.getElementById('res02');
     let dob = (Math.abs(x) - Math.abs(y)) / (1 + Math.abs(x * y));
-    res.innerHTML = "Результат обчислення:" + dob;
+    res.innerHTML = "Результат обчислення = " + dob;
 }
 
 function task03() {
-    let x = document.getElementById('c-item') | 0;
+    let x = document.getElementById('citem').value | 0;
     let res = document.getElementById('res03');
+    console.log(x);
     let v = x * x * x;
     let s = 6 * x * x;
     res.innerHTML = "Об'єм куба = " + v + "<br>" + "Площа = " + s;

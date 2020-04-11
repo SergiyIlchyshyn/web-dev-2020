@@ -1,0 +1,23 @@
+.header {
+    min-height: 100vh;
+    background-image: url(../img/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.header__title {
+    width: 70%;
+    /* margin: auto 5% auto auto; */
+    color: white;
+    text-align: center;
+}
+
+.header__title h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
